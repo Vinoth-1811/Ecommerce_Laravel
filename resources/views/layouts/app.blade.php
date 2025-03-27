@@ -473,9 +473,9 @@
                 </div>
             @else
                 <div class="header-tools__item hover-container">
-                    <a href="{{ Auth::check() && Auth::user()->utype === 'ADM' ? route('admin.index') : route('user.index') }}"
+                    <a href="{{ auth()->check() && auth()->user()->utype === 'ADM' ? route('admin.index') : route('user.index') }}"
                     class="header-tools__item">
-                        <span class="pr-6px">{{ Auth::user()->name }}</span>
+                        <span class="pr-6px">{{ auth()->user()->name }}</span>
                         <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <use href="#icon_user" />
