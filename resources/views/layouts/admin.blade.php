@@ -65,12 +65,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-product.html" class="">
+                                            <a href="{{ route('admin.add_product') }}" class="">
                                                 <div class="text">Add Product</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="products.html" class="">
+                                            <a href="{{ route('admin.products') }}" class="">
                                                 <div class="text">Products</div>
                                             </a>
                                         </li>
@@ -83,7 +83,7 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-brand.html" class="">
+                                            <a href="{{ route('admin.add_brand') }}" class="">
                                                 <div class="text">New Brand</div>
                                             </a>
                                         </li>
@@ -101,12 +101,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-category.html" class="">
+                                            <a href="{{ route('admin.add_category') }}" class="">
                                                 <div class="text">New Category</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="categories.html" class="">
+                                            <a href="{{ route('admin.categories') }}" class="">
                                                 <div class="text">Categories</div>
                                             </a>
                                         </li>
@@ -463,12 +463,12 @@
         </div>
     </div>
 
-    <script src="{{ 'js/jquery.min.js'}}"></script>
-    <script src="{{ 'js/bootstrap.min.js'}}"></script>
-    <script src="{{ 'js/bootstrap-select.min.js'}}"></script>
-    <script src="{{ 'js/sweetalert.min.js'}}"></script>
-    <script src="{{ 'js/apexcharts/apexcharts.js'}}"></script>
-    <script src="{{ 'js/main.js'}}"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('js/sweetalert.min.js') }}"></script>
+    <script src="{{ asset('js/apexcharts/apexcharts.js') }} "></script>
+    <script src="{{ asset('js/main.js') }}"></script>
     <script>
         (function ($) {
 
